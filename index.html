@@ -1,49 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Santoso's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css"> 
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <h1>Hi there!</h1>
-    <p>My name is Nick Santoso, and this is my personal website showcasing my experience, projects, and whatever else I find cool.</p>
-    <p>To give a bit of info about myself, I am a 4th year Biomedical Engineering Student at the University of British Columbia...</p>
+    <meta name="description" content="Nick Santoso's personal website showcasing experience and projects.">
+    <meta name="author" content="Nick Santoso">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
 
-    <!-- Education Section -->
-    <h2>Education</h2>
-    <p>BASc, Biomedical Engineering | The University of British Columbia <em>(April 2026)</em></p>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="/">Nick Santoso: Biomedical Engineering Student | Medical Devices & Bionic Prosthesis Enthusiast</a></h1>
 
-    <!-- Experience Section -->
-    <h2>Experience</h2>
-    <h3>Co-op Research Assistant @ BC Cancer Vancouver <em>(May 2024 - December 2024)</em></h3>
-    <ul>
-        <li>Designed and implemented a quality assurance program for Limbus AI’s auto contouring software...</li>
-    </ul>
+        <img src="/assets/img/Nick Santoso (1).jpg" alt="Logo" style="width: 210px; height: auto;">
 
-    <!-- Projects Section with Images -->
-    <h2>Projects</h2>
-    <h3>Battery Management System</h3>
-    <p>A Battery Management System (BMS) for the UBC Bionics GRASP project...</p>
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <img src="/assets/img/train_img/image26.png" alt="python window" style="width: 90%; height: auto;">
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+
+        <p class="view">
+          <span>
+            <a href="https://www.linkedin.com/in/nicholas-c-santoso" target="_blank">
+            <img src="{{ '/assets/img/LinkedIn_logo_initials.png' | relative_url }}" alt="LinkedIn" style="width: 30px; height: 30px; margin-right: 15px;">
+          </a>
+          </span>
+          <span>
+            <a href="https://github.com/Fettuccinifelix" target="_blank">
+              <img src="{{ '/assets/img/github-color-svgrepo-com.svg' | relative_url }}" alt="GitHub" style="width: 30px; height: 30px; margin-right: 15px;">
+            </a>
+          </span>
+          <span>
+            <a href="mailto:santoso6@student.ubc.ca">
+              <img src="{{ '/assets/img/gmail-envelope-svgrepo-com.svg' | relative_url }}" alt="Email" style="width: 30px; height: 30px; margin-right: 15px;">
+            </a>
+          </span>
+        </p>
+
+      </header>
+      <section>
+        <h1>Hi there!</h1>
+        <p>My name is Nick Santoso, and this is my personal website showcasing my experience, projects, and whatever else I find cool.</p>
+        <p>To give a bit of info about myself, I am a 4th year Biomedical Engineering Student at the University of British Columbia...</p>
+    
+        <!-- Education Section -->
+        <h2>Education</h2>
+        <p>BASc, Biomedical Engineering | The University of British Columbia <em>(April 2026)</em></p>
+    
+        <!-- Experience Section -->
+        <h2>Experience</h2>
+        <h3>Co-op Research Assistant @ BC Cancer Vancouver <em>(May 2024 - December 2024)</em></h3>
+        <ul>
+            <li>Designed and implemented a quality assurance program for Limbus AI’s auto contouring software...</li>
+        </ul>
+    
+        <!-- Projects Section with Images -->
+        <h2>Projects</h2>
+        <h3>Battery Management System</h3>
+        <p>A Battery Management System (BMS) for the UBC Bionics GRASP project...</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img src="/assets/img/train_img/image26.png" alt="python window" style="width: 90%; height: auto;">
+        </div>
+    
+        <!-- Dynamic Image Example -->
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img id="firstImage" src="/assets/img/femur_img/nicola/diag.png" alt="model" style="width: 30%; margin-right: 15%; height: auto; max-height: 300px;">
+            <img id="secondImage" src="/assets/img/femur_img/nicola/diag with bone.png" alt="model with bone" style="width: 30%; height: auto; max-height: 300px;">
+        </div>
+    
+        <script>
+            // Example of adding dynamic behavior with JavaScript
+            const firstImage = document.getElementById('firstImage');
+            firstImage.addEventListener('click', function() {
+                alert('You clicked on the first image!');
+            });
+        </script>
+      </section>
+      <footer>
+        <p>This project is maintained by Nick Santoso</p>
+       
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-
-    <!-- Dynamic Image Example -->
-    <div style="display: flex; justify-content: center; align-items: center;">
-        <img id="firstImage" src="/assets/img/femur_img/nicola/diag.png" alt="model" style="width: 30%; margin-right: 15%; height: auto; max-height: 300px;">
-        <img id="secondImage" src="/assets/img/femur_img/nicola/diag with bone.png" alt="model with bone" style="width: 30%; height: auto; max-height: 300px;">
-    </div>
-
-    <script>
-        // Example of adding dynamic behavior with JavaScript
-        const firstImage = document.getElementById('firstImage');
-        firstImage.addEventListener('click', function() {
-            alert('You clicked on the first image!');
-        });
-    </script>
-
-</body>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
 </html>
