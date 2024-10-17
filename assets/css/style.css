@@ -475,9 +475,10 @@ ul.downloads {
 }
 
 strong {
-    color: #222;
-    font-weight: 700
+    color: #000;
+    font-weight: 900;
 }
+
 
 .downloads li+li+li {
     border-right: none;
