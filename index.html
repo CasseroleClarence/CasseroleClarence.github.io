@@ -53,21 +53,75 @@
     
         <!-- Experience Section -->
         <h2>Experience</h2>
-        <p><strong>Co-op Research Assistant @ BC Cancer Vancouver</strong><em>(May 2024 - December 2024)</em></p>
+        <p><strong>Co-op Research Assistant @ BC Cancer Vancouver<em>(May 2024 - December 2024)</em></strong></p>
         <ul>
             <li>Designed and implemented a quality assurance program for Limbus AI’s auto contouring software, ensuring precision and reliability of auto-generated contours.</li>
             <li>Cleaned and validated datasets of <strong>4,000+</strong> patient plans in Microsoft Excel, significantly improving accuracy and reliability of data for retrospective breast cancer studies. </li>
             <li>Developed <strong>C# scripts</strong> using Eclipse Scripting API libraries to process and extract dosimetry metrics from <strong>19,000+</strong> patient plans, creating scalable and reusable tools for data analyses.</li>
     
         </ul>
-    
+
+        <p><strong>Info-Wayfinding Volunteer @ UBC Hospital<em>(June 2023 - June 2024)</em></strong></p>
+        <ul>
+            <li>Engaged with patients, clients, residents, visitors, and staff to ensure a positive and welcoming environment, fostering strong relationships and exceptional patient-oriented care.</li>
+            <li>Provided vital assistance to over **30** visitors every shift by offering clear information and precise directions, ensuring easy access to essential services. </li>
+        </ul>
+
         <!-- Projects Section with Images -->
         <h2>Projects</h2>
-        <h3>Battery Management System</h3>
-        <p>A Battery Management System (BMS) for the UBC Bionics GRASP project...</p>
+        <a href="/projects/BMS.html"><h3>Battery Management System <em>(September 2023 - Present)</em></h3></a>
+        <p>A Battery Management System (BMS) for the UBC Bionics GRASP project to ensure the safety and longevity of both the batteries and electronics. The system protects against common faults, monitors battery charge levels, and assesses overall battery health to optimize performance. </p>
+        <h4><strong><em> Skills applied: Altium, circuit analysis, PCB testing and debugging, SMD and TH soldering</em></strong></h4>
+
+        <a href="/projects/TrainingDevice.html"><h3>Biomedical Training Device <em>(January 2024 - April 2024)</em></h3></a>
+        <p>A projection-based prototype training device for biomedical engineering technologists to simulate preventative maintenance on patient point-of-care units. </p>
+        <h4><strong><em> Skills applied: Skills applied: circuit design, Python, OpenCV</em></strong></h4>
+
         <div style="display: flex; justify-content: center; align-items: center;">
-            <img src="/assets/img/train_img/image26.png" alt="python window" style="width: 90%; height: auto;">
+          <img id="trainingImage" img src="/assets/img/train_img/image26.png" alt="Python window of image processing" style="width: 90%; height: auto;">
         </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+          
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("trainingImage");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+          
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+          
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() { 
+            modal.style.display = "none";
+          }
+          </script>
+
+
+
+
+        <a href="/projects/BMS.html"><h3>Battery Management System</h3></a>
+        <p>A Battery Management System (BMS) for the UBC Bionics GRASP project to ensure the safety and longevity of both the batteries and electronics. The system protects against common faults, monitors battery charge levels, and assesses overall battery health to optimize performance. </p>
+        <h4><strong><em> Skills applied: Altium, circuit analysis, PCB testing and debugging, SMD and TH soldering</em></strong></h4>
+
+
+
+
+
     
         <!-- Dynamic Image Example -->
         <div style="display: flex; justify-content: center; align-items: center;">
@@ -75,13 +129,7 @@
             <img id="secondImage" src="/assets/img/femur_img/nicola/diag with bone.png" alt="model with bone" style="width: 30%; height: auto; max-height: 300px;">
         </div>
     
-        <script>
-            // Example of adding dynamic behavior with JavaScript
-            const firstImage = document.getElementById('firstImage');
-            firstImage.addEventListener('click', function() {
-                alert('You clicked on the first image!');
-            });
-        </script>
+
       </section>
       <footer>
         <p>This project is maintained by Nick Santoso</p>
