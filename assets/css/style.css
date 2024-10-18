@@ -620,6 +620,8 @@ footer {
     display: block;
     max-width: 90%;
     max-height: 90%;
+    width: 75%;
+    height: auto;
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -627,7 +629,6 @@ footer {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
