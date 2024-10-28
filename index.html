@@ -81,6 +81,9 @@
           <img id="trainingImage" img src="/assets/img/train_img/image26.png" alt="Python window of image processing" style="width: 90%; height: auto; cursor: pointer;"> 
         </div>
 
+        <p></p>
+        <p></p>
+
         <!-- need to add line break-->
 
         <!-- The Modal -->
@@ -137,9 +140,47 @@
         <h4><strong><em>Skills applied: SolidWorks CAD, SolidWorks Simulation (FEA)</em></strong></h4>
 
 <div style="display: flex; justify-content: center; align-items: center;">
-    <img id="firstImage" src="/assets/img/femur_img/nicola/diag.png" alt="model" style="width: 30%; margin-right: 15%; height: auto; max-height: 300px;">
-    <img id="secondImage" src="/assets/img/femur_img/nicola/diag with bone.png" alt="model with bone" style="width: 30%; height: auto; max-height: 300px;">
+  <img id="fixation" img src="/assets/img/train_img/CombinedFix.png" alt="Fixation device with and without bone" style="width: 90%; height: auto; cursor: pointer;"> 
 </div>
+
+<p></p>
+        <p></p>
+
+<!-- need to add line break-->
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("fixation");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+
+  // Close the modal if clicking outside of the image
+  modal.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
 
 
     
