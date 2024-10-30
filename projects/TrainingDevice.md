@@ -52,4 +52,59 @@ Overall, this project was a hands-on exploration of computer vision techniques u
 
 ## <a id="research"></a> Research 
 
+Here's a structured website outline based on the document provided:
+
+---
+
+# Mixed Reality Training for Biomedical Technologists
+
+## Background and Overview
+This project addresses the challenge of providing efficient, cost-effective, and accessible training for Biomedical Engineering Technologists (BMETs). The Lower Mainland Biomedical Engineering (LMBME) group faces high costs, limited scheduling, and equipment shortages in current training models. Our goal is to develop a mixed reality (MR) training method to enable BMETs to perform critical device maintenance efficiently.
+
+## 1.0 Needs Assessment
+- **Medical Problem**: Discusses the demand for BMET training, existing limitations in training options, and the impact of inadequate training on device reliability and patient care.
+- **Scope Definition**: LMBME’s needs include training for the BD Alaris infusion system, budget constraints, limited equipment, and scheduling restrictions.
+- **Current Solution Limitations**: The one-time, eight-hour training model lacks flexibility and fails to build confidence in BMETs over the long term.
+
+## 2.0 Alternative Training Models
+Explores several training models, each evaluated for strengths and limitations:
+- **Factory Training**: Expensive and inflexible but comprehensive.
+- **In-House Training**: More accessible but limited in device availability.
+- **Online Simulations and Video Training**: Cost-effective but lack hands-on experience.
+- **Blended Learning**: Combines online and in-person training for greater flexibility.
+
+## 3.0 Stakeholder Analysis
+- **Technicians**: Require effective training to maintain devices confidently.
+- **Hospital Administrators**: Focus on sustainability and cost-efficiency.
+- **Patients**: Depend on reliable, well-maintained equipment for quality care.
+- **Additional Perspectives**: Insights into BMET, hospital management, and clinician concerns regarding VR/AR training.
+
+## 4.0 Needs and Specifications
+### Needs Summary
+Defines target users, markets, and the potential for MR solutions to address the training gaps in healthcare institutions. Key considerations include real-time feedback, cost-effectiveness, and scalable infrastructure.
+
+### Specifications and Requirements
+Details the functional and operational requirements, including:
+- **Interactive Feedback**: Real-time instructional feedback to simulate in-person training.
+- **Cost-Effective Implementation**: Aims for lower costs than current training models.
+- **User-Friendly Design**: Prioritizes accessibility for BMETs of varying tech proficiencies.
+
+## 5.0 Concept Development
+- **Concept Generation**: Eight initial MR training models (e.g., VR headsets, mobile apps, wearable sensors).
+- **Concept Screening and Ranking**: Ranked based on plausibility, feasibility, and scalability, leading to the selection of the top concepts.
+
+## 6.0 Final Design Concept
+- **Virtual Projected PCU**: The final design concept uses a virtual PCU with sensors and projectors to simulate maintenance procedures. It eliminates the need for physical devices, reducing costs and setup time.
+
+## 7.0 Evaluation Criteria and Scoring
+Explains how concepts were scored and weighted, with factors such as:
+- **Scheduling Needs**: How self-directed each training method is.
+- **Cost**: Comparative analysis of five-year costs.
+- **Ease of Setup**: Evaluation of initial setup and maintenance.
+
+## 8.0 Contributions
+Lists individual team contributions, covering needs identification, stakeholder analysis, concept scoring, and final presentation.
+
+---
+
 
