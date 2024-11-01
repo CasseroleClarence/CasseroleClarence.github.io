@@ -52,9 +52,6 @@ Overall, this project was a hands-on exploration of computer vision techniques u
 
 ## <a id="research"></a> Research 
 
-Here's a structured website outline based on the document provided:
-
----
 
 # Mixed Reality Training for Biomedical Technologists
 
