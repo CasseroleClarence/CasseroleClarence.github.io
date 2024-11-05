@@ -67,67 +67,6 @@
             <div id="caption"></div>
           </div>
   
-          <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-          
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("armimg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            
-            img.onclick = function() {
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-          
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-          
-            // Close the modal if clicking outside of the image
-            modal.onclick = function(event) {
-              if (event.target === modal) {
-                modal.style.display = "none";
-              }
-            }
-          </script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-  
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("teamimg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    
-    img.onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-  
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-  
-    // Close the modal if clicking outside of the image
-    modal.onclick = function(event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
 
   <p> The BMS was my first project with UBC Bionics. During its development, I gained hands-on experience with <em>soldering</em> (both SMD and through-hole), <em>component selection</em>>, and, most notably, <em>PCB design in Altium</em>, as this was my first complete PCB design and manufacturing endeavor. Here, I aim to share some of the lessons learned and the many challenges I faced throughout this project. </p>
 
@@ -152,36 +91,6 @@
 
   <p class="center"> Img 3: Rough BMS sketch</p>
 
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-  
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("diagram");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    
-    img.onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-  
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
-    }
-  
-    // Close the modal if clicking outside of the image
-    modal.onclick = function(event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
 
 <h2>2.0 System Specifications</h2>
 <table>
