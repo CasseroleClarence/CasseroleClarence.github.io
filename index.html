@@ -73,6 +73,53 @@
         <p>A Battery Management System (BMS) for the UBC Bionics GRASP project to ensure the safety and longevity of both the batteries and electronics. The system protects against common faults, monitors battery charge levels, and assesses overall battery health to optimize performance. </p>
         <h4><strong><em>Skills applied: Altium, circuit analysis, PCB testing and debugging, SMD and TH soldering</em></strong></h4>
 
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img id="BMStitle" img src="assets/img/BMS/BMSTitleImg.png" alt="3D models of BMS boards" style="width: 90%; height: auto; cursor: pointer;"> 
+        </div>
+
+        <p></p>
+        <p></p>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+        
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("BMStitle");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          
+          img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+          
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+        
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() { 
+            modal.style.display = "none";
+          }
+        
+          // Close the modal if clicking outside of the image
+          modal.onclick = function(event) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script>
+
+
+
         <a href="/projects/TrainingDevice.html"><h3>Biomedical Training Device <em>(January 2024 - April 2024)</em></h3></a>
         <p>A projection-based prototype training device for biomedical engineering technologists to simulate preventative maintenance on patient point-of-care units. </p>
         <h4><strong><em>Skills applied: Skills applied: circuit design, Python, OpenCV</em></strong></h4>
@@ -85,13 +132,6 @@
         <p></p>
 
         <!-- need to add line break-->
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
-          <div id="caption"></div>
-        </div>
 
         <script>
           // Get the modal
@@ -123,8 +163,6 @@
             }
           }
         </script>
-
-
 
 
         <a href="/projects/BRCAproj.html"><h3>Breast Invasive Carcinoma Research <em>(September 2023 - December 2023)</em></h3></a>
