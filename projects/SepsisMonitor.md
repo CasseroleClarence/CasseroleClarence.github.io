@@ -42,6 +42,7 @@ We developed two prototypes:
 
 Basic Sensor Array: Included core sensors with limited connectivity
 Enhanced Model: Included advanced connectivity features for better remote monitoring
+
 Lessons Learned and Future Work
 Throughout this project, we learned the importance of balancing technical performance with user-centric design. Future work includes:
 
